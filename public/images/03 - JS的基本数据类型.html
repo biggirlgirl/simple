@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			// JS中声明变量需要使用 var，var的作用是开辟一块内存空间，让我们来存放数据
+			// 变量：程序运行中其值可以变化的量，变量可以保存值、修改值、传值等
+			// 声明变量的格式： var 变量名      比如：var num
+			// 变量名使用时要注意：
+			// 	1.变量名可以随便起，但是要有意义
+			//  2.变量名由字母、下划线、数字组成，但是不能以关键字
+			//    命名，比如：不能使用 var当做变量名
+			//  3.变量名区分大小写，尽量采用驼峰式命名法，比如：aNum , aBigNum
+			
+			// JS是一个弱类型的语言
+			// 变量本身没有类型，但是变量的值有类型，所以变量
+			// 的类型由变量的值所决定
+			
+			
+			// 1.数值类型number
+			// 声明变量num，并把10赋值给num
+			// = 在程序里面不念等号 ，是'赋值运算符'
+			var num = 10;
+			var num1 = -10;
+			var num2 = 0.1;
+			// 0x 开头表示十六进制数据
+			var num3 = 0xff;
+			// 0 开头表示八进制数据
+			var num4 = 065;
+			// typeof 返回数据的类型
+			// alert(typeof num4);
+			// 错误的写法
+			// var num5 = 10%;
+			
+			
+			// 2.字符串类型 string
+			// JS里面字符串一般使用 '' 或者 "" 括起来，推荐使用''
+			var str1 = '10';
+			var str2 = '这是字符串';
+			var str3 = "这也是字符串";
+			// alert(typeof str3);
+			
+			// 3.布尔类型 Boolean
+			var bool1 = true;//true为真
+			var bool2 = false;//false为假
+			// 在计算里面可以用数字来表示真假，非零即为真
+			var bool3 = 1;//为真
+			var bool4 = 0;//为假
+			// alert(typeof bool1);
+			
+			
+			// 4.未定义类型 undefined
+			var a;
+			// alert(a);
+			// alert(aa); aa 未声明或者未赋值不能直接使用
+			
+			// 5.对象类型object
+			var b = {};
+			// alert(b);
+			// null 空的
+			var c = null;
+			// alert(typeof c)
+			
+			// 6.函数类型function
+			var d = function(){};
+			// alert(typeof d)
+			
+			
+			// 简单运算 + - * / 加减乘除
+			var x = 10;
+			var y = 5.0;
+			// 在JS里面没有小数的概念，即便数字后面有小数位
+			// 最终计算的结果也是整数，比如：5.0 其实就是5
+			var z = x + y;
+			z = x - y;
+			z = x * y;
+			z = x / y;
+			// alert(z);
+			
+			
+			// JS无法准确表示大部分小数，内部存在误差，但是这个
+			// 误差没办法避免，这个问题是计算机表示数字固有的
+			// 问题，存在于很多编程语言中
+			var m = 0.1;
+			var n = 0.2;
+			var re = m + n; //0.3000...4
+			re = m - n;//-0.1
+			re = m * n;//0.02000...4
+			// re = m / n;//0.5
+			alert(re);
+			
+			
+		</script>
+	</body>
+</html>

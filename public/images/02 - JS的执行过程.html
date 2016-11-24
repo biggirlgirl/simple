@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>了解JS的执行过程</title>
+		<script type="text/javascript">
+			// 警示框 
+			// () 内是显示的内容
+			alert(1);
+		</script>
+		
+		<style type="text/css">
+			div{
+				background-color: red;
+			}
+			a{
+				text-decoration: none;
+			}
+			img{
+				height: 200px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<h1>主标题</h1>
+		<h2>副标题</h2>
+		<main>
+			<div>主要内容</div>
+			<img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1473040683&di=575dc5c6c64dbc4f97194ee21e75f722&src=http://www.pp3.cn/uploads/201608/20160801009.jpg" alt="" />
+			<img src="http://desk.fd.zol-img.com.cn/t_s960x600c5/g3/M03/0D/03/Cg-4V1S_EOWIMyUCAAhG5zFfIHUAATsVQNFKM0ACEb_770.jpg"/>
+			<img src="http://desk.fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/05/ChMkJlbKyaiIWb94ABPLYcQNMykAALIQwCA8u8AE8t5061.jpg"/>
+			<a href="#">百度一下，你就知道</a>
+			
+			<script type="text/javascript">
+				alert(2);
+			</script>
+			
+			<table border="1">
+				<tr>
+					<td>HTML5</td>
+					<td>CSS</td>
+					<td>JavaScript</td>
+				</tr>
+			</table>
+			<p>这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容这是一段很长很长的内容</p>
+		</main>
+		
+		
+		<script type="text/javascript">
+			alert(3);
+		</script>
+	</body>
+</html>
+
+<!--代码在页面上的执行顺序总是从上往下，但是浏览器会优先执行
+HTML标签和文字信息，将图片、视频和外部引用的资源放在后面
+执行，执行过程中如果遇到JS代码会执行JS，JS执行的过程中，
+浏览器会停止HTML和CSS的渲染工作，直到JS代码执行完毕，再继续
+执行HTML和CSS的解析-->
